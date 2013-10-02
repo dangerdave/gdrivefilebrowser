@@ -1,15 +1,14 @@
 gdrivefilebrowser
 =================
 
-Google Drive File Browser Extension by TYPO3 v6.0
+Google Drive File Browser Extension by TYPO3 v6.x
 
-Ext KEY:             gdrivefilebrowser
-TYPO3 Version:       6.0
+KEY:             	gdrivefilebrowser
 
 Module Name:         Major Project					
 Module Number:       SAE 620						
 Block:               Major Project					
-Date Submitted:      15.11.2013						
+Date Submitted:      13.11.2013						
 Institution:         SAE Institute Vienna
 Award Name:          Bachelor of Science (Honors), Web Development
 
@@ -18,6 +17,19 @@ Name:                David Steindl
 City:                Vienna							
 Country:             Austria
 
+================
+Extension Functions 
+================
+This is Javascript based Filebrowser Extension for TYPO3 Version 6.x.
+The Ajax Requests are redirected to a File Abstraction Layer Controller.
+The Data is transferred by a PHP $_POST variable so it is important to maximize 
+the upload size in your Server php.ini. Check this [Link](http://wiki.typo3.org/How_to_upload_big_files "Link.")
+
+Funktions:
+- Save files from Google Drive to fileadmin/user_upload/gdrivefilebrowser folder.
+- Download file direct.
+- Upload files.
+- Create folders.
 
 ================
 Install Instructions Google Settings
