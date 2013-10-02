@@ -1,0 +1,68 @@
+{namespace h=TYPO3\Gdrivefilebrowser\ViewHelpers\Be}
+
+<h:IncludeJQuery jquery="1" jqueryui="1" />
+<f:be.container pageTitle="Google Drive Filebrowser" addCssFile="{f:uri.resource(path:'css/style.css')}" addJsFile="{f:uri.resource(path:'js/main.js')}" loadPrototype="0" enableClickMenu="0">
+<script type="text/javascript" src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+	<div class="typo3-fullDoc">
+		<div id="typo3-docheader">
+			<div id="typo3-docheader-row1">
+				<div class="buttonsleft">
+				</div>
+				<div class="buttonsright">
+					<f:be.buttons.shortcut />
+				</div>
+			</div>
+			<div id="typo3-docheader-row2">
+				<div class="docheader-row2-left">
+					<input type="button" id="authorizeButton" style="display: none" value="Authorize Google Account" />
+				</div>
+				<!--
+				<div class="docheader-row2-left">
+					<f:be.buttons.csh />
+					<f:be.menus.actionMenu>
+						<f:be.menus.actionMenuItem label="Overview" controller="" action="list" />
+						<f:be.menus.actionMenuItem label="Create new Gdrivefilebrowser" action="new" controller="Gdrivefilebrowser" />
+					</f:be.menus.actionMenu>
+				</div>
+				<div class="docheader-row2-right">
+					<f:be.pagePath />
+					<f:be.pageInfo />
+				</div>
+			-->
+			</div>
+
+		</div>
+		<div id="typo3-docbody">
+			<div id="typo3-inner-docbody">
+				<f:flashMessages renderMode="div" />
+				<f:render section="content" />
+			</div>
+			<div class="syncPath-Container">
+				<p><span class="t3-icon t3-icon-actions t3-icon-actions-document t3-icon-document-info">&nbsp;</span> Synchronize Folder: /fileadmin/user_upload/gdrivefilebrowser/<span id="accountSelectName"></span></p>
+			</div>
+			<div id="content">
+				<!--Add a file picker for the user to start the upload process -->
+				<div class="list_header">
+					<div class="custom-file">
+					    <span class="filelinktext"><span class="t3-icon t3-icon-actions t3-icon-actions-edit t3-icon-edit-upload">&nbsp;</span> File Upload</span>
+					    <input type="file" id="filePicker" style="display: none" />
+					</div>
+					<div class="custom-file-refresh">
+						<a href="#" title="Refresh" class="list_refresh"><span class="t3-icon t3-icon-actions t3-icon-actions-system t3-icon-system-refresh">&nbsp;</span> Refresh</a>
+					</div>
+					<div class="custom-file">
+						<a href="#" id="createFolderLink" title="Create Folder"><span style="" class="t3-icon t3-icon-apps t3-icon-apps-pagetree t3-icon-pagetree-folder-default">&nbsp;</span> Create Folder</a>
+						<div id="dialog-form">
+						    <form>
+						        <p>Inset Folder Name</p>
+						        <input type="text" id="inputfoldertxt" class="text ui-widget-content ui-corner-all" />
+						    </form>
+						</div>
+					</div>
+					<br style="height:1px; clear:both;"/>
+				</div>
+		  		<ul id="contentList" class="sortable"></ul>
+		  	</div>
+		</div>
+	</div>
+</f:be.container>

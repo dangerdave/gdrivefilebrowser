@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-09-21T21:02:59Z" product-name="gdrivefilebrowser">
+		<header/>
+		<body>
+
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="token.description">
+				<source>token</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

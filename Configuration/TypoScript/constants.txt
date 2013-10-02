@@ -1,0 +1,14 @@
+module.tx_gdrivefilebrowser {
+	view {
+		# cat=module.tx_gdrivefilebrowser/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:gdrivefilebrowser/Resources/Private/Backend/Templates/
+		# cat=module.tx_gdrivefilebrowser/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:gdrivefilebrowser/Resources/Private/Backend/Partials/
+		# cat=module.tx_gdrivefilebrowser/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:gdrivefilebrowser/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_gdrivefilebrowser//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

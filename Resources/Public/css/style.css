@@ -1,0 +1,35 @@
+/* 
+ * Autor: David Steindl
+ * Date: 01. September 2013
+ * Ext: gdrivefilebrowser 
+ *
+*/
+
+/* APP HEAD */
+.tx_gdrivefilebrowser .activate_hide{display:none;}
+.tx_gdrivefilebrowser .spacer01{padding-right: 90px}
+.tx_gdrivefilebrowser .spacer02{padding-right: 220px}
+/* APP CONTENT */
+#content{
+	padding: 20px 10px 40px 10px;
+	background-color:#dddddd; width:510px;
+	-webkit-box-shadow: inset 10px 10px 8px -9px rgba(130,130,130,0.5);
+	-moz-box-shadow: inset 10px 10px 8px -9px rgba(130,130,130,0.5);
+	box-shadow: inset 10px 10px 8px -9px rgba(130,130,130,0.5);
+}
+#dialog-form{display: none;}
+#authorizeButton{margin-top:3px;}
+.list_header{margin-bottom:20px;}
+.sortable{list-style-type: none; margin: 0; padding: 0; width: 500px;}
+.sortable li{margin: 0 2px 2px 2px; padding: 2px;}
+.sortable li:hover{background-color:#bababa !important;}
+.ui-state-highlight {height: 1.1em; line-height: 1.0em;}
+.custom-file-refresh{margin-right:30px; float:left;}
+.custom-file{height: 15px; position:relative; float:left;}
+.custom-file #filePicker{position: absolute; bottom:0; left:0; width: 100%; height: 30px; opacity: 0;cursor:pointer;}
+.custom-file span{float: left; font-size: 11px; height: 18px;}
+.custom-file span.filelinktext{width: 100px;}
+.list_Link{float:right;}
+.list_refresh{}
+.syncPath-Container{margin-bottom:20px;}
+.syncPath-Container{padding: 0px 12px};

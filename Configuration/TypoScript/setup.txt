@@ -1,0 +1,11 @@
+# Module configuration
+module.tx_gdrivefilebrowser {
+	persistence {
+		storagePid = {$module.tx_gdrivefilebrowser.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_gdrivefilebrowser.view.templateRootPath}
+		partialRootPath = {$module.tx_gdrivefilebrowser.view.partialRootPath}
+		layoutRootPath = {$module.tx_gdrivefilebrowser.view.layoutRootPath}
+	}
+}
